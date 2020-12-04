@@ -1,0 +1,8 @@
+pandas==1.0.3
+numpy==1.17.4
+seaborn==0.11.0
+imageio==2.9.0
+matplotlib==3.1.2
+geoplot==0.4.1
+geopandas==0.8.1
+mapclassify==2.3.0
