@@ -22,12 +22,31 @@ struct District
     int samples;
 } districts[M];
 
+vector<pair<pair<int, int>, pair<int, int>>> transactions;
+
 string get_parts(string &line, int &i)
 {
     string word;
     while (i < line.length())
     {
         if (line[i] == ',')
+        {
+            i++;
+            break;
+        }
+        else
+            word += line[i];
+        i++;
+    }
+    return word;
+}
+
+string get_words(string &line, int &i)
+{
+    string word;
+    while (i < line.length())
+    {
+        if (line[i] == ' ')
         {
             i++;
             break;
@@ -61,13 +80,41 @@ void get_district(string &line, District &d)
     d.samples = stoi(get_parts(line, i));
 }
 
+pair<pair<int, int>, pair<int, int>> get_trans(string &line)
+{
+    int i = 0;
+    pair<pair<int, int>, pair<int, int>> ans;
+    ans.first.first = stoi(get_words(line, i));
+    ans.first.second = stoi(get_words(line, i));
+    ans.second.first = stoi(get_words(line, i));
+    ans.second.second = stoi(get_words(line, i));
+    return ans;
+}
+
+int score()
+{
+}
+
 signed main()
 {
+
+    ifstream trans;
+    trans.open("transactions.out"); // Change this
+    string line;
+    getline(trans, line);
+    while (getline(trans, line))
+    {
+        transactions.push_back(get_trans(line));
+    }
+    for (int i = 0; i < transactions.size(); i++)
+    {
+        cout << transactions[i].first.first << " " << transactions[i].second.first << " " << transactions[i].second.second << " " << transactions[i].first.second << '\n';
+    }
 
     ifstream distin, labin;
     distin.open("districts_data_v0.csv");
     labin.open("lab_data_v0.csv");
-    string line;
+    // string line;
 
     getline(distin, line);
     while (getline(distin, line))
@@ -89,4 +136,6 @@ signed main()
     //     cout << labz[i].id << " " << labz[i].lat << " " << labz[i].lon << " " << labz[i].district << " ";
     //     cout << labz[i].type << " " << labz[i].capacity << " " << labz[i].backlog << endl;
     // }
+
+    cout << score();
 }
