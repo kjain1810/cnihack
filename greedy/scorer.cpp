@@ -114,7 +114,7 @@ int score()
             //     cout << lab << " ++ ";
             if (districts[dist].samples < amt)
             {
-                cout << "No samples left to send\n";
+                cout << "No samples left to send from " << dist << "\n";
                 exit(0);
             }
             if (labz[lab].capacity >= amt)
@@ -136,7 +136,7 @@ int score()
             }
             else
             {
-                cout << "Lab cant overload further\n";
+                cout << "Lab " << lab << " cant overload further\n";
                 exit(0);
             }
         }
@@ -144,7 +144,7 @@ int score()
         {
             if (districts[dist].samples < amt)
             {
-                cout << "No samples left to carry over\n";
+                cout << "No samples left to carry over from " << dist << "\n";
                 exit(0);
             }
             districts[dist].samples -= amt;
@@ -182,14 +182,10 @@ int score()
     //     {
     //         if (labz[lab].district != dist)
     //         {
-    //             cout << "Cant overload a lab from another district\n";
+    //             cout << "Cant overload lab " << lab << " from another district " << dist << "\n";
     //             exit(0);
     //         }
     //     }
-    //     // if (dist == 1)
-    //     // {
-    //     //     cout << districts[1].samples << '\n';
-    //     // }
     // }
     for (int i = 1; i <= num_districts; i++)
     {
