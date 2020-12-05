@@ -1,0 +1,350 @@
+Using license file /home/shashwat/gurobi.lic
+Academic license - for non-commercial use only - expires 2021-02-02
+
+Total Samples: 18476
+Model size: 5792
+
+
+
+Gurobi Optimizer version 9.1.0 build v9.1.0rc0 (linux64)
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 2954 rows, 5418 columns and 11008 nonzeros
+Model fingerprint: 0x0923e204
+Variable types: 0 continuous, 5418 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+09]
+  Objective range  [2e+02, 7e+05]
+  Bounds range     [1e+00, 7e+03]
+  RHS range        [3e+01, 7e+03]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 4.156200e+07
+Presolve removed 172 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 2782 rows, 5418 columns, 10750 nonzeros
+Variable types: 0 continuous, 5418 integer (2580 binary)
+
+Root relaxation: objective 2.096233e+07, 875 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2.0962e+07    0   23 4.1562e+07 2.0962e+07  49.6%     -    0s
+H    0     0                    2.259354e+07 2.0962e+07  7.22%     -    0s
+H    0     0                    2.214296e+07 2.0962e+07  5.33%     -    0s
+     0     0 2.1116e+07    0  137 2.2143e+07 2.1116e+07  4.64%     -    0s
+H    0     0                    2.206428e+07 2.1116e+07  4.30%     -    0s
+H    0     0                    2.205588e+07 2.1116e+07  4.26%     -    0s
+H    0     0                    2.196768e+07 2.1116e+07  3.88%     -    0s
+     0     0 2.1116e+07    0  144 2.1968e+07 2.1116e+07  3.88%     -    0s
+H    0     0                    2.196327e+07 2.1119e+07  3.84%     -    0s
+     0     0 2.1304e+07    0  122 2.1963e+07 2.1304e+07  3.00%     -    0s
+     0     0 2.1305e+07    0  130 2.1963e+07 2.1305e+07  2.99%     -    0s
+     0     0 2.1305e+07    0  133 2.1963e+07 2.1305e+07  2.99%     -    0s
+H    0     0                    2.192424e+07 2.1305e+07  2.82%     -    0s
+     0     0 2.1384e+07    0  144 2.1924e+07 2.1384e+07  2.47%     -    0s
+H    0     0                    2.184357e+07 2.1384e+07  2.11%     -    0s
+     0     0 2.1393e+07    0  142 2.1844e+07 2.1393e+07  2.06%     -    0s
+     0     0 2.1405e+07    0  128 2.1844e+07 2.1405e+07  2.01%     -    0s
+     0     0 2.1406e+07    0  131 2.1844e+07 2.1406e+07  2.00%     -    0s
+     0     0 2.1407e+07    0  130 2.1844e+07 2.1407e+07  2.00%     -    0s
+H    0     0                    2.183680e+07 2.1407e+07  1.97%     -    0s
+     0     0 2.1426e+07    0  113 2.1837e+07 2.1426e+07  1.88%     -    0s
+     0     0 2.1427e+07    0  114 2.1837e+07 2.1427e+07  1.88%     -    0s
+     0     0 2.1440e+07    0  138 2.1837e+07 2.1440e+07  1.82%     -    0s
+H    0     0                    2.178239e+07 2.1440e+07  1.57%     -    0s
+     0     0 2.1441e+07    0  141 2.1782e+07 2.1441e+07  1.57%     -    0s
+     0     0 2.1441e+07    0  138 2.1782e+07 2.1441e+07  1.57%     -    0s
+     0     0 2.1446e+07    0  156 2.1782e+07 2.1446e+07  1.55%     -    0s
+     0     0 2.1446e+07    0  155 2.1782e+07 2.1446e+07  1.55%     -    1s
+     0     0 2.1446e+07    0   23 2.1782e+07 2.1446e+07  1.55%     -    1s
+     0     0 2.1446e+07    0  127 2.1782e+07 2.1446e+07  1.55%     -    1s
+H    0     0                    2.178103e+07 2.1446e+07  1.54%     -    1s
+H    0     0                    2.176823e+07 2.1446e+07  1.48%     -    1s
+     0     0 2.1446e+07    0  111 2.1768e+07 2.1446e+07  1.48%     -    1s
+     0     0 2.1446e+07    0  132 2.1768e+07 2.1446e+07  1.48%     -    1s
+     0     0 2.1447e+07    0  141 2.1768e+07 2.1447e+07  1.48%     -    1s
+     0     0 2.1447e+07    0  150 2.1768e+07 2.1447e+07  1.48%     -    1s
+     0     0 2.1465e+07    0  124 2.1768e+07 2.1465e+07  1.39%     -    1s
+     0     0 2.1466e+07    0  141 2.1768e+07 2.1466e+07  1.39%     -    1s
+H    0     0                    2.173039e+07 2.1466e+07  1.22%     -    1s
+     0     0 2.1466e+07    0  144 2.1730e+07 2.1466e+07  1.22%     -    1s
+     0     0 2.1470e+07    0  151 2.1730e+07 2.1470e+07  1.20%     -    1s
+     0     0 2.1470e+07    0  150 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0   23 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0  131 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0  134 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0  159 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0  149 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1470e+07    0  152 2.1730e+07 2.1470e+07  1.20%     -    2s
+     0     0 2.1475e+07    0  168 2.1730e+07 2.1475e+07  1.18%     -    2s
+     0     0 2.1477e+07    0  171 2.1730e+07 2.1477e+07  1.17%     -    2s
+     0     0 2.1477e+07    0  174 2.1730e+07 2.1477e+07  1.16%     -    2s
+     0     0 2.1478e+07    0  180 2.1730e+07 2.1478e+07  1.16%     -    2s
+     0     0 2.1478e+07    0  180 2.1730e+07 2.1478e+07  1.16%     -    2s
+     0     2 2.1478e+07    0  179 2.1730e+07 2.1478e+07  1.16%     -    2s
+H  702   566                    2.171191e+07 2.1502e+07  0.97%   7.0    3s
+  1065   771 2.1639e+07   72  178 2.1712e+07 2.1531e+07  0.83%   7.8    5s
+H 1141   777                    2.171191e+07 2.1572e+07  0.64%  10.8    8s
+H 1341   754                    2.171188e+07 2.1576e+07  0.63%  14.7    8s
+  1977   903 2.1663e+07   71  153 2.1712e+07 2.1576e+07  0.63%  19.6   10s
+H 3067  1071                    2.171162e+07 2.1597e+07  0.53%  23.7   12s
+  3936  1450 2.1677e+07   42  155 2.1712e+07 2.1626e+07  0.40%  25.9   15s
+  5660  2077 2.1709e+07   56  151 2.1712e+07 2.1633e+07  0.36%  28.4   20s
+  7646  2885 2.1666e+07   38  205 2.1712e+07 2.1641e+07  0.33%  30.0   25s
+  9442  3438 2.1686e+07   40  174 2.1712e+07 2.1647e+07  0.30%  30.4   30s
+ 11542  3995 2.1683e+07   51  199 2.1712e+07 2.1653e+07  0.27%  30.8   36s
+ 13665  4424 2.1697e+07   67  161 2.1712e+07 2.1659e+07  0.24%  31.3   40s
+ 15680  4722 2.1693e+07   55  186 2.1712e+07 2.1663e+07  0.22%  31.4   45s
+ 17007  4866 2.1701e+07   66  145 2.1712e+07 2.1665e+07  0.21%  31.4   50s
+ 19861  4814 2.1683e+07   43  175 2.1712e+07 2.1671e+07  0.19%  31.2   56s
+ 21920  4491     cutoff   57      2.1712e+07 2.1676e+07  0.16%  31.1   60s
+ 25690  3658     cutoff   48      2.1712e+07 2.1683e+07  0.13%  30.5   66s
+ 28126  2738     cutoff   91      2.1712e+07 2.1688e+07  0.11%  30.1   70s
+ 31846   659 2.1707e+07   67  105 2.1712e+07 2.1699e+07  0.06%  29.1   75s
+
+Cutting planes:
+  Gomory: 79
+  MIR: 86
+  Flow cover: 139
+  Mod-K: 1
+
+Explored 34427 nodes (963939 simplex iterations) in 76.62 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 10: 2.17116e+07 2.17119e+07 2.17119e+07 ... 2.18436e+07
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.171161673761e+07, best bound 2.171161673761e+07, gap 0.0000%
+
+
+Optimal value of objective function: 21711616.73760736
+Best cost: 21711616.73760736
+
+Lab: 0 	Type: 0 	Capacity = 800 	Tested = 800.0 	Samples overloaded = 0.0
+Lab: 1 	Type: 0 	Capacity = 600 	Tested = 600.0 	Samples overloaded = 0.0
+Lab: 2 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 3 	Type: 0 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 4 	Type: 0 	Capacity = 500 	Tested = 489.0 	Samples overloaded = 0.0
+Lab: 5 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 6 	Type: 0 	Capacity = 600 	Tested = 555.0 	Samples overloaded = 0.0
+Lab: 7 	Type: 0 	Capacity = 700 	Tested = 700.0 	Samples overloaded = 0.0
+Lab: 8 	Type: 0 	Capacity = 400 	Tested = 400.0 	Samples overloaded = 0.0
+Lab: 9 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 10 	Type: 0 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 11 	Type: 1 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 12 	Type: 0 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 13 	Type: 0 	Capacity = 400 	Tested = 400.0 	Samples overloaded = 0.0
+Lab: 14 	Type: 0 	Capacity = 800 	Tested = 800.0 	Samples overloaded = 0.0
+Lab: 15 	Type: 0 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 16 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 17 	Type: 0 	Capacity = 150 	Tested = 121.0 	Samples overloaded = 0.0
+Lab: 18 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 19 	Type: 0 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+Lab: 20 	Type: 1 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 21 	Type: 1 	Capacity = 100 	Tested = 100.0 	Samples overloaded = 0.0
+Lab: 22 	Type: 1 	Capacity = 500 	Tested = 0.0 	Samples overloaded = 0.0
+Lab: 23 	Type: 1 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 24 	Type: 1 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 25 	Type: 1 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 26 	Type: 1 	Capacity = 90 	Tested = 90.0 	Samples overloaded = 0.0
+Lab: 27 	Type: 1 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 28 	Type: 1 	Capacity = 500 	Tested = 131.0 	Samples overloaded = 0.0
+Lab: 29 	Type: 1 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+Lab: 30 	Type: 1 	Capacity = 500 	Tested = 325.0 	Samples overloaded = 0.0
+Lab: 31 	Type: 1 	Capacity = 70 	Tested = 70.0 	Samples overloaded = 0.0
+Lab: 32 	Type: 1 	Capacity = 700 	Tested = 666.0 	Samples overloaded = 0.0
+Lab: 33 	Type: 1 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+Lab: 34 	Type: 1 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 35 	Type: 1 	Capacity = 72 	Tested = 0.0 	Samples overloaded = 0.0
+Lab: 36 	Type: 1 	Capacity = 200 	Tested = 140.0 	Samples overloaded = 0.0
+Lab: 37 	Type: 1 	Capacity = 200 	Tested = 95.0 	Samples overloaded = 0.0
+Lab: 38 	Type: 1 	Capacity = 140 	Tested = 140.0 	Samples overloaded = 0.0
+Lab: 39 	Type: 1 	Capacity = 70 	Tested = 70.0 	Samples overloaded = 0.0
+Lab: 40 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 41 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 42 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 43 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 44 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 45 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 46 	Type: 1 	Capacity = 200 	Tested = 120.0 	Samples overloaded = 0.0
+Lab: 47 	Type: 1 	Capacity = 36 	Tested = 0.0 	Samples overloaded = 0.0
+Lab: 48 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 49 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 50 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 51 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 52 	Type: 0 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 53 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 54 	Type: 0 	Capacity = 36 	Tested = 10.0 	Samples overloaded = 0.0
+Lab: 55 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 56 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 57 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 58 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 59 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 60 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 61 	Type: 0 	Capacity = 36 	Tested = 10.0 	Samples overloaded = 0.0
+Lab: 62 	Type: 0 	Capacity = 200 	Tested = 200.0 	Samples overloaded = 0.0
+Lab: 63 	Type: 0 	Capacity = 200 	Tested = 210.0 	Samples overloaded = 10.0
+Lab: 64 	Type: 0 	Capacity = 600 	Tested = 600.0 	Samples overloaded = 0.0
+Lab: 65 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 66 	Type: 1 	Capacity = 300 	Tested = 279.0 	Samples overloaded = 0.0
+Lab: 67 	Type: 0 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+Lab: 68 	Type: 0 	Capacity = 200 	Tested = 210.0 	Samples overloaded = 10.0
+Lab: 69 	Type: 1 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+Lab: 70 	Type: 1 	Capacity = 150 	Tested = 0.0 	Samples overloaded = 0.0
+Lab: 71 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 72 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 73 	Type: 0 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 74 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 75 	Type: 1 	Capacity = 36 	Tested = 36.0 	Samples overloaded = 0.0
+Lab: 76 	Type: 1 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 77 	Type: 0 	Capacity = 300 	Tested = 300.0 	Samples overloaded = 0.0
+Lab: 78 	Type: 1 	Capacity = 200 	Tested = 0.0 	Samples overloaded = 0.0
+Lab: 79 	Type: 0 	Capacity = 200 	Tested = 157.0 	Samples overloaded = 0.0
+Lab: 80 	Type: 1 	Capacity = 30 	Tested = 13.0 	Samples overloaded = 0.0
+Lab: 81 	Type: 1 	Capacity = 250 	Tested = 250.0 	Samples overloaded = 0.0
+Lab: 82 	Type: 1 	Capacity = 500 	Tested = 500.0 	Samples overloaded = 0.0
+Lab: 83 	Type: 1 	Capacity = 200 	Tested = 10.0 	Samples overloaded = 0.0
+Lab: 84 	Type: 1 	Capacity = 500 	Tested = 439.0 	Samples overloaded = 0.0
+Lab: 85 	Type: 1 	Capacity = 150 	Tested = 150.0 	Samples overloaded = 0.0
+
+District headquater 0 	 distributed 62.0 	samples out of 367
+District headquater 1 	 distributed 420.0 	samples out of 420
+District headquater 2 	 distributed 400.0 	samples out of 525
+District headquater 3 	 distributed 0 	samples out of 630
+District headquater 4 	 distributed 7350.0 	samples out of 7350
+District headquater 5 	 distributed 600.0 	samples out of 630
+District headquater 6 	 distributed 157.0 	samples out of 157
+District headquater 7 	 distributed 236.0 	samples out of 367
+District headquater 8 	 distributed 36.0 	samples out of 210
+District headquater 9 	 distributed 36.0 	samples out of 367
+District headquater 10 	 distributed 840.0 	samples out of 840
+District headquater 11 	 distributed 525.0 	samples out of 525
+District headquater 12 	 distributed 279.0 	samples out of 472
+District headquater 13 	 distributed 10.0 	samples out of 262
+District headquater 14 	 distributed 315.0 	samples out of 315
+District headquater 15 	 distributed 157.0 	samples out of 157
+District headquater 16 	 distributed 525.0 	samples out of 525
+District headquater 17 	 distributed 210.0 	samples out of 210
+District headquater 18 	 distributed 315.0 	samples out of 315
+District headquater 19 	 distributed 175.0 	samples out of 315
+District headquater 20 	 distributed 210.0 	samples out of 210
+District headquater 21 	 distributed 420.0 	samples out of 420
+District headquater 22 	 distributed 210.0 	samples out of 210
+District headquater 23 	 distributed 210.0 	samples out of 210
+District headquater 24 	 distributed 400.0 	samples out of 420
+District headquater 25 	 distributed 200.0 	samples out of 525
+District headquater 26 	 distributed 735.0 	samples out of 735
+District headquater 27 	 distributed 200.0 	samples out of 367
+District headquater 28 	 distributed 36.0 	samples out of 210
+District headquater 29 	 distributed 210.0 	samples out of 210
+
+
+
+Disrict 0 	 has sent 305.0 	 samples to external lab 12 	(type:  0 district:  12 )	 with distance = 104.85057260256768
+Disrict 2 	 has sent 125.0 	 samples to external lab 52 	(type:  0 district:  19 )	 with distance = 82.96620785913657
+Disrict 3 	 has sent 630.0 	 samples to external lab 7 	(type:  0 district:  4 )	 with distance = 45.08484777263526
+Disrict 5 	 has sent 30.0 	 samples to external lab 6 	(type:  0 district:  16 )	 with distance = 96.40915901155631
+Disrict 7 	 has sent 131.0 	 samples to external lab 28 	(type:  1 district:  4 )	 with distance = 41.30501867528603
+Disrict 8 	 has sent 174.0 	 samples to external lab 4 	(type:  0 district:  14 )	 with distance = 49.193129648266336
+Disrict 9 	 has sent 331.0 	 samples to external lab 11 	(type:  1 district:  4 )	 with distance = 179.990591707434
+Disrict 12 	 has sent 193.0 	 samples to external lab 41 	(type:  0 district:  1 )	 with distance = 70.23519673474539
+Disrict 13 	 has sent 252.0 	 samples to external lab 10 	(type:  0 district:  12 )	 with distance = 54.8855855568682
+Disrict 19 	 has sent 140.0 	 samples to external lab 19 	(type:  0 district:  13 )	 with distance = 59.125056546948926
+Disrict 24 	 has sent 20.0 	 samples to external lab 37 	(type:  1 district:  11 )	 with distance = 68.47910991811392
+Disrict 25 	 has sent 325.0 	 samples to external lab 30 	(type:  1 district:  4 )	 with distance = 56.092627779781694
+Disrict 27 	 has sent 167.0 	 samples to external lab 57 	(type:  0 district:  26 )	 with distance = 125.40295294553519
+Disrict 28 	 has sent 174.0 	 samples to external lab 44 	(type:  0 district:  0 )	 with distance = 73.5966808484872
+
+
+
+At centroid 0 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 800 	in district 4
+At centroid 1 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 600 	in district 4
+At centroid 2 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 4
+At centroid 3 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 300 	in district 21
+At centroid 4 	 incoming = 174.0 	 outgoing = 174.0 	 capacity= 500 	in district 14
+At centroid 5 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 24
+At centroid 6 	 incoming = 30.0 	 outgoing = 30.0 	 capacity= 600 	in district 16
+At centroid 7 	 incoming = 630.0 	 outgoing = 630.0 	 capacity= 700 	in district 4
+At centroid 8 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 400 	in district 2
+At centroid 9 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 10
+At centroid 10 	 incoming = 252.0 	 outgoing = 252.0 	 capacity= 300 	in district 12
+At centroid 11 	 incoming = 331.0 	 outgoing = 331.0 	 capacity= 500 	in district 4
+At centroid 12 	 incoming = 305.0 	 outgoing = 305.0 	 capacity= 500 	in district 12
+At centroid 13 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 400 	in district 1
+At centroid 14 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 800 	in district 4
+At centroid 15 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 300 	in district 4
+At centroid 16 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 20
+At centroid 17 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 6
+At centroid 18 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 24
+At centroid 19 	 incoming = 140.0 	 outgoing = 140.0 	 capacity= 150 	in district 13
+At centroid 20 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 21 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 100 	in district 4
+At centroid 22 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 23 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 24 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 300 	in district 4
+At centroid 25 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 4
+At centroid 26 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 90 	in district 4
+At centroid 27 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 10
+At centroid 28 	 incoming = 131.0 	 outgoing = 131.0 	 capacity= 500 	in district 4
+At centroid 29 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 11
+At centroid 30 	 incoming = 325.0 	 outgoing = 325.0 	 capacity= 500 	in district 4
+At centroid 31 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 70 	in district 4
+At centroid 32 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 700 	in district 26
+At centroid 33 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 10
+At centroid 34 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 4
+At centroid 35 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 72 	in district 10
+At centroid 36 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 10
+At centroid 37 	 incoming = 20.0 	 outgoing = 20.0 	 capacity= 200 	in district 11
+At centroid 38 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 140 	in district 4
+At centroid 39 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 70 	in district 4
+At centroid 40 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 25
+At centroid 41 	 incoming = 193.0 	 outgoing = 193.0 	 capacity= 200 	in district 1
+At centroid 42 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 28
+At centroid 43 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 0
+At centroid 44 	 incoming = 174.0 	 outgoing = 174.0 	 capacity= 200 	in district 0
+At centroid 45 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 27
+At centroid 46 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 21
+At centroid 47 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 1
+At centroid 48 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 49 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 50 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 7
+At centroid 51 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 7
+At centroid 52 	 incoming = 125.0 	 outgoing = 125.0 	 capacity= 300 	in district 19
+At centroid 53 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 8
+At centroid 54 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 29
+At centroid 55 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 29
+At centroid 56 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 26
+At centroid 57 	 incoming = 167.0 	 outgoing = 167.0 	 capacity= 200 	in district 26
+At centroid 58 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 9
+At centroid 59 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 60 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 6
+At centroid 61 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 23
+At centroid 62 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 23
+At centroid 63 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 22
+At centroid 64 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 600 	in district 5
+At centroid 65 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 18
+At centroid 66 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 300 	in district 18
+At centroid 67 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 4
+At centroid 68 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 17
+At centroid 69 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 4
+At centroid 70 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 16
+At centroid 71 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 72 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 73 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 74 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 4
+At centroid 75 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 36 	in district 12
+At centroid 76 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 77 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 300 	in district 11
+At centroid 78 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 18
+At centroid 79 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 15
+At centroid 80 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 30 	in district 1
+At centroid 81 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 250 	in district 4
+At centroid 82 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 83 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 200 	in district 20
+At centroid 84 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 500 	in district 4
+At centroid 85 	 incoming = 0.0 	 outgoing = 0.0 	 capacity= 150 	in district 10
+
+Total Government Capacity = 11482 
+Total private labs' capacity = 9224
