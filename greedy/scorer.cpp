@@ -4,6 +4,7 @@ using namespace std;
 
 const double kmR = 6373.0;
 const int N = 502, M = 52;
+double factor = 1;
 
 int num_districts = 0, num_labs = 0;
 
@@ -94,7 +95,7 @@ void get_district(string &line, District &d)
     d.name = get_parts(line, i);
     d.lat = stod(get_parts(line, i));
     d.lon = stod(get_parts(line, i));
-    d.samples = stoi(get_parts(line, i));
+    d.samples = (stoi(get_parts(line, i)) * factor);
 }
 
 pair<pair<int, int>, pair<int, int>> get_trans(string &line)

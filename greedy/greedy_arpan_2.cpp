@@ -4,6 +4,7 @@ typedef long long int ll;
 
 const double kmR = 6373.0;
 const int N = 502, M = 52;
+double factor = 1;
 
 int num_districts = 0, num_labs = 0;
 
@@ -13,6 +14,11 @@ struct Lab
     double lat, lon;
     int district, type, capacity, backlog;
 } labz[N];
+
+double toRadians(double degree)
+{
+    return (degree * M_PI) / 180;
+}
 
 struct District
 {
@@ -39,6 +45,18 @@ string get_parts(string &line, int &i)
     return word;
 }
 
+double calcdist(double lat1d, double lon1d, double lat2d, double lon2d)
+{
+    double lat1r, lon1r, lat2r, lon2r, u, v;
+    lat1r = toRadians(lat1d);
+    lon1r = toRadians(lon1d);
+    lat2r = toRadians(lat2d);
+    lon2r = toRadians(lon2d);
+    u = sin((lat2r - lat1r) / 2);
+    v = sin((lon2r - lon1r) / 2);
+    return 2.0 * kmR * asin(sqrt(u * u + cos(lat1r) * cos(lat2r) * v * v));
+}
+
 void get_lab(string &line, Lab &lab)
 {
     int i = 0;
@@ -58,7 +76,7 @@ void get_district(string &line, District &d)
     d.name = get_parts(line, i);
     d.lat = stod(get_parts(line, i));
     d.lon = stod(get_parts(line, i));
-    d.samples = stoi(get_parts(line, i));
+    d.samples = (stoi(get_parts(line, i)) * factor);
 }
 vector<pair<pair<int, int>, pair<int, int>>> transactions;
 
@@ -111,9 +129,42 @@ void solve()
         // cout << dr.first << " " << dr.second << '\n';
         int alpha = 0.5;
         int beta = 0.5;
+        vector<pair<double, int>> considered_labs;
         for (auto lab : labz)
         {
-            // int pen1 = max(0,lab.capacity-)
+            if (lab.capacity <= 0 || lab.district == dno)
+                continue;
+            double dist = calcdist(districts[dno].lat, districts[dno].lon, lab.lat, lab.lon);
+            // int pen1 = max(0, lab.capacity - districts[dno].samples);
+            int pen1 = max(0, districts[dno].samples - lab.capacity);
+            double tot_pen = dist * 1000 + pen1 * 5000 + (districts[dno].samples - pen1) * ((lab.type == 0) ? 800 : 1600);
+            considered_labs.push_back({tot_pen, lab.id});
+        }
+        if (considered_labs.size() == 0)
+            continue;
+        sort(considered_labs.begin(), considered_labs.end());
+        int lab_choice = considered_labs[0].second;
+        int tamt = min(labz[lab_choice].capacity, districts[dno].samples);
+        districts[dno].samples -= tamt;
+        labz[lab_choice].capacity -= tamt;
+        transactions.push_back({{0, tamt}, {dno, lab_choice}});
+    }
+    for (int i = 1; i <= num_districts; i++)
+    {
+        if (districts[i].samples > 0)
+        {
+            // transactions.push_back({{1, districts[i].samples}, {i, i}});
+            for (auto lab : labz)
+            {
+                if (lab.district != i || lab.capacity <= -100)
+                    continue;
+                int tamt = min(lab.capacity + 100, districts[i].samples);
+                transactions.push_back({{0, tamt}, {i, lab.id}});
+                lab.capacity -= tamt;
+                districts[i].samples -= tamt;
+                if (districts[i].samples == 0)
+                    break;
+            }
         }
     }
     for (int i = 1; i <= num_districts; i++)
