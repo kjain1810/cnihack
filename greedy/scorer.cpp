@@ -202,6 +202,8 @@ int score()
             if (outside_transfer_to_lab[lab] > lab_capacity[lab])
             {
                 cout << "Cant overload a lab from another district\n";
+                cout << "Lab " << lab << " overloaded by outside districts\n";
+                cout << "Lab capacity - " << lab_capacity[lab] << '\n';
                 exit(0);
             }
         }
