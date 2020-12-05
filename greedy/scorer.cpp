@@ -95,6 +95,7 @@ int score()
 {
     int totcost = 0;
     set<int> overloaded_labs;
+    vector<vector<pair<pair<int, int>, pair<int, int>>>> district_transfer(num_districts + 1);
     for (auto tr : transactions)
     {
         int dist = tr.first.second;
@@ -106,7 +107,8 @@ int score()
             //     cout << lab << " ++ ";
             if (dist != labz[lab].district)
             {
-                continue;
+                district_transfer[dist].push_back(tr);
+                // continue;
             }
             // if (dist == 1)
             //     cout << lab << " ++ ";
@@ -149,6 +151,28 @@ int score()
             totcost += 10000 * amt;
         }
     }
+    for (int i = 1; i <= num_districts; i++)
+    {
+        int cnt = 0;
+        double lat = 0;
+        double lon = 0;
+        for (auto tr : district_transfer[i])
+        {
+            int dist = tr.first.second;
+            int lab = tr.second.first;
+            int amt = tr.second.second;
+            cnt++;
+            lat += labz[lab].lat;
+            lon += labz[lab].lon;
+        }
+        if (cnt == 0)
+            continue;
+        lat = lat / (double(cnt));
+        lon = lon / (double(cnt));
+        double dist = sqrt(pow(districts[i].lat - lat, 2) + pow(districts[i].lon - lon, 2));
+        totcost += 1000 * dist;
+    }
+
     for (auto tr : transactions)
     {
         int dist = tr.first.second;

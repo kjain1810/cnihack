@@ -96,16 +96,16 @@ void getinput()
         get_lab(line, labz[++num_labs]);
     }
 
-    for (int i = 1; i <= num_districts; i++)
-    {
-        cout << districts[i].id << " " << districts[i].name << " " << districts[i].lat << " ";
-        cout << districts[i].lon << " " << districts[i].samples << endl;
-    }
-    for (int i = 1; i <= num_labs; i++)
-    {
-        cout << labz[i].id << " " << labz[i].lat << " " << labz[i].lon << " " << labz[i].district << " ";
-        cout << labz[i].type << " " << labz[i].capacity << " " << labz[i].backlog << endl;
-    }
+    // for (int i = 1; i <= num_districts; i++)
+    // {
+    //     cout << districts[i].id << " " << districts[i].name << " " << districts[i].lat << " ";
+    //     cout << districts[i].lon << " " << districts[i].samples << endl;
+    // }
+    // for (int i = 1; i <= num_labs; i++)
+    // {
+    //     cout << labz[i].id << " " << labz[i].lat << " " << labz[i].lon << " " << labz[i].district << " ";
+    //     cout << labz[i].type << " " << labz[i].capacity << " " << labz[i].backlog << endl;
+    // }
 }
 
 double toRadians(double degree)
@@ -241,11 +241,11 @@ void checkdistrictbacklogs()
 
 void saveallotments()
 {
-    freopen("output.csv", "w", stdout);
-    cout << "transfer_type,source,destination,samples transferred\n";
+    // freopen("output.csv", "w", stdout);
+    // cout << "transfer_type,source,destination,samples transferred\n";
     for (int a = 0; a < num_allotments; a++)
     {
-        cout << allotments[a].type << "," << allotments[a].districtID << "," << allotments[a].labID << "," << allotments[a].samples << "\n";
+        cout << allotments[a].type << " " << allotments[a].districtID << " " << allotments[a].labID << " " << allotments[a].samples << "\n";
     }
 }
 
