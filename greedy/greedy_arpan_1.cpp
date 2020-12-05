@@ -64,7 +64,7 @@ vector<pair<pair<int, int>, pair<int, int>>> transactions;
 
 void solve()
 {
-    int assigned_amt[num_labs] = {0};
+    vector<int> assigned_amt(num_labs + 1, 0);
     for (int i = 1; i <= num_districts; i++)
     {
         // Assign all public labs
