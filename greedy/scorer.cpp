@@ -96,6 +96,14 @@ int score()
     int totcost = 0;
     set<int> overloaded_labs;
     vector<vector<pair<pair<int, int>, pair<int, int>>>> district_transfer(num_districts + 1);
+
+    vector<int> lab_capacity(num_labs + 1, 0);
+    vector<int> outside_transfer_to_lab(num_labs + 1, 0);
+    for (int i = 1; i <= num_labs; i++)
+    {
+        lab_capacity[i] = labz[i].capacity;
+    }
+
     for (auto tr : transactions)
     {
         int dist = tr.first.second;
@@ -173,24 +181,36 @@ int score()
         totcost += 1000 * dist;
     }
 
-    // for (auto tr : transactions)
-    // {
-    //     int dist = tr.first.second;
-    //     int lab = tr.second.first;
-    //     int amt = tr.second.second;
-    //     if (overloaded_labs.find(lab) != overloaded_labs.end())
-    //     {
-    //         if (labz[lab].district != dist)
-    //         {
-    //             cout << "Cant overload a lab from another district\n";
-    //             exit(0);
-    //         }
-    //     }
-    //     // if (dist == 1)
-    //     // {
-    //     //     cout << districts[1].samples << '\n';
-    //     // }
-    // }
+    for (auto tr : transactions)
+    {
+        int dist = tr.first.second;
+        int lab = tr.second.first;
+        int amt = tr.second.second;
+        // if (overloaded_labs.find(lab) != overloaded_labs.end())
+        // {
+        //     if (labz[lab].district != dist)
+        //     {
+        //         cout << "Cant overload a lab from another district\n";
+        //         exit(0);
+        //     }
+        // }
+        if (tr.first.first != 0)
+            continue;
+        if (dist != labz[lab].district)
+        {
+            outside_transfer_to_lab[lab] += amt;
+            if (outside_transfer_to_lab[lab] > lab_capacity[lab])
+            {
+                cout << "Cant overload a lab from another district\n";
+                exit(0);
+            }
+        }
+        // if (dist == 1)
+        // {
+        //     cout << districts[1].samples << '\n';
+        // }
+    }
+
     for (int i = 1; i <= num_districts; i++)
     {
         if (districts[i].samples > 0)
