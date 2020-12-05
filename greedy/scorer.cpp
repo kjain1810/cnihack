@@ -7,6 +7,23 @@ const int N = 502, M = 52;
 
 int num_districts = 0, num_labs = 0;
 
+double toRadians(double degree)
+{
+    return (degree * M_PI) / 180;
+}
+
+double calcdist(double lat1d, double lon1d, double lat2d, double lon2d)
+{
+    double lat1r, lon1r, lat2r, lon2r, u, v;
+    lat1r = toRadians(lat1d);
+    lon1r = toRadians(lon1d);
+    lat2r = toRadians(lat2d);
+    lon2r = toRadians(lon2d);
+    u = sin((lat2r - lat1r) / 2);
+    v = sin((lon2r - lon1r) / 2);
+    return 2.0 * kmR * asin(sqrt(u * u + cos(lat1r) * cos(lat2r) * v * v));
+}
+
 struct Lab
 {
     int id;
@@ -91,9 +108,9 @@ pair<pair<int, int>, pair<int, int>> get_trans(string &line)
     return ans;
 }
 
-int score()
+double score()
 {
-    int totcost = 0;
+    double totcost = 0;
     set<int> overloaded_labs;
     vector<vector<pair<pair<int, int>, pair<int, int>>>> district_transfer(num_districts + 1);
 
@@ -135,7 +152,7 @@ int score()
             else if (labz[lab].capacity + 100 >= amt)
             {
                 int lab_cost = (labz[lab].type == 0) ? 800 : 1600;
-                int init_amt = min(0, labz[lab].capacity);
+                int init_amt = max(0, labz[lab].capacity);
                 int over_amt = amt - init_amt;
                 districts[dist].samples -= amt;
                 labz[lab].capacity -= amt;
@@ -177,7 +194,7 @@ int score()
             continue;
         lat = lat / (double(cnt));
         lon = lon / (double(cnt));
-        double dist = sqrt(pow(districts[i].lat - lat, 2) + pow(districts[i].lon - lon, 2));
+        double dist = calcdist(districts[i].lat, districts[i].lon, lat, lon);
         totcost += 1000 * dist;
     }
 
@@ -268,5 +285,6 @@ signed main()
     //     cout << labz[i].type << " " << labz[i].capacity << " " << labz[i].backlog << endl;
     // }
 
-    cout << "Your Score is = " << score() << '\n';
+    cout << "Your Score is = " << fixed << setprecision(10) << score() << '\n';
+    cout << labz[10].id << " " << labz[30].id << " " << calcdist(labz[10].lat, labz[10].lon, labz[30].lat, labz[30].lon);
 }
