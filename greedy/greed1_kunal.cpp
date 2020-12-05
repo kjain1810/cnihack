@@ -178,11 +178,11 @@ void fillintralabs()
             sort(labshere.begin(), labshere.end(), comparelabsdemand);
             for (auto lab : labshere)
             {
-                if (districts[a].samples == 0)
+                if (districts[a].samples <= 0)
                     break;
                 allot(lab.id, districts[a].id, min(districts[a].samples, lab.capacity), 0);
                 int gone = min(districts[a].samples, lab.capacity);
-                districts[a].samples -= lab.capacity;
+                districts[a].samples -= gone;
                 lab.capacity -= gone;
             }
         }
@@ -190,6 +190,8 @@ void fillintralabs()
         {
             for (auto lab : labshere)
             {
+                if (districts[a].samples == 0)
+                    break;
                 allot(lab.id, districts[a].id, lab.capacity, 0);
                 districts[a].samples -= lab.capacity;
                 lab.capacity = 0;
