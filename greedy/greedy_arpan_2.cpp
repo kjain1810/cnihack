@@ -108,13 +108,13 @@ void solve()
     for (auto dr : districts_rem)
     {
         auto dno = dr.second;
-        cout << dr.first << " " << dr.second << '\n';
-        // for (auto lab : labz)
-        // {
-        //     for (auto lab : labz)
-        //     {
-        //     }
-        // }
+        // cout << dr.first << " " << dr.second << '\n';
+        int alpha = 0.5;
+        int beta = 0.5;
+        for (auto lab : labz)
+        {
+            // int pen1 = max(0,lab.capacity-)
+        }
     }
     for (int i = 1; i <= num_districts; i++)
     {
