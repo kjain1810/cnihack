@@ -119,7 +119,7 @@ void fillinterlabs()
             if (labz[idx].capacity <= -100)
                 continue;
             int sending = min(min(100, labz[idx].initcapacity), districts[a].samples);
-            if (labz[idx].capacity - sending < -100)
+            if (labz[idx].capacity - sending < 0)
                 continue;
             allot(labz[idx].id, districts[a].id, sending, 0);
             labz[idx].capacity -= sending;
@@ -149,8 +149,8 @@ signed main()
     getinput();
     getdifferences();
     calculatelabdemand();
-    fillintralabs();
     fillinterlabs();
+    fillintralabs();
     checkdistrictbacklogs();
     saveallotments();
     return 0;
