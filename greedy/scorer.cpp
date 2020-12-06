@@ -157,7 +157,7 @@ double score()
                 int over_amt = amt - init_amt;
                 districts[dist].samples -= amt;
                 labz[lab].capacity -= amt;
-                totcost += lab_cost * init_amt + 5000 * over_amt;
+                totcost += lab_cost * init_amt + (5000 + lab_cost) * over_amt;
                 overloaded_labs.insert(lab);
             }
             else
