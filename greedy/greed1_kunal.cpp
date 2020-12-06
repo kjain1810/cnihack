@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int MAX_TRAVEL = 1000;
+const int MAX_TRAVEL = 180;
 
 int num_allotments = 0;
 
@@ -82,9 +82,10 @@ void fillintralabs()
             {
                 if (districts[a].samples == 0)
                     break;
-                allot(labz[lab].id, districts[a].id, labz[lab].capacity, 0);
-                districts[a].samples -= labz[lab].capacity;
-                labz[lab].capacity = 0;
+                int gone = min(districts[a].samples, labz[lab].capacity);
+                allot(labz[lab].id, districts[a].id, gone, 0);
+                districts[a].samples -= gone;
+                labz[lab].capacity -= gone;
             }
         }
     }
@@ -107,6 +108,8 @@ void fillinterlabs()
         for (int b = 1; b <= num_labs; b++)
         {
             if (labz[b].district == districts[a].id)
+                continue;
+            if (calcdist(labz[b].lat, labz[b].lon, districts[a].lat, districts[a].lon) >= MAX_TRAVEL)
                 continue;
             labidx.push_back(b);
         }

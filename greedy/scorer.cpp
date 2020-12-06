@@ -190,6 +190,15 @@ double score()
             cnt++;
             lat += labz[lab].lat;
             lon += labz[lab].lon;
+            for (auto tr2 : district_transfer[i])
+            {
+                int lab2 = tr2.second.first;
+                if (calcdist(labz[lab].lat, labz[lab].lon, labz[lab2].lat, labz[lab2].lon) > 40)
+                {
+                    cout << "District " << dist << " sending samples to labs " << lab << " and " << lab2 << " which are more than 40km apart\n";
+                    exit(0);
+                }
+            }
         }
         if (cnt == 0)
             continue;
@@ -287,5 +296,4 @@ signed main()
     // }
 
     cout << "Your Score is = " << fixed << setprecision(10) << score() << '\n';
-    cout << labz[10].id << " " << labz[30].id << " " << calcdist(labz[10].lat, labz[10].lon, labz[30].lat, labz[30].lon);
 }
