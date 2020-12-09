@@ -270,10 +270,13 @@ signed main()
     }
 
     ifstream distin, labin;
-    string dist_data = "district_sample_data_001.csv";
-    string lab_data = "lab_sample_data_001.csv";
-    distin.open(dist_data);
-    labin.open(lab_data);
+    string dist_data = "district_sample_data_00";
+    string suf = ".csv";
+    string lab_data = "lab_sample_data_00";
+    vector<string> poss = {"1", "2", "3", "4", "5"};
+    int num = 2;
+    distin.open(dist_data + poss[num - 1] + suf);
+    labin.open(lab_data + poss[num - 1] + suf);
     // string line;
 
     getline(distin, line);
