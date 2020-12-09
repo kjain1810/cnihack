@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int MAX_TRAVEL = 180;
+const int MAX_TRAVEL = 500;
 
 int num_allotments = 0;
 
@@ -140,20 +140,21 @@ void checkdistrictbacklogs()
 
 void saveallotments()
 {
-    freopen("transactions.out", "w", stdout);
+    freopen("lol", "w", stdout);
     for (int a = 0; a < num_allotments; a++)
     {
-        cout << allotments[a].type << " " << allotments[a].districtID << " " << allotments[a].labID << " " << allotments[a].samples << "\n";
+        if (allotments[a].samples > 0)
+            cout << allotments[a].type << " " << allotments[a].districtID << " " << allotments[a].labID << " " << allotments[a].samples << "\n";
     }
 }
 
-signed main()
+signed main(int argc, char *argv[])
 {
-    getinput();
+    getinput("../data/test_files/district_sample_data_001.csv", "lab_sample_data_001.csv");
     getdifferences();
     calculatelabdemand();
-    fillinterlabs();
     fillintralabs();
+    fillinterlabs();
     checkdistrictbacklogs();
     saveallotments();
     return 0;

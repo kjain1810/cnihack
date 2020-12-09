@@ -49,6 +49,7 @@ void get_lab(std::string &line, Lab &lab)
 {
     int i = 0;
     lab.id = stoi(get_parts(line, i));
+    lab.id = stoi(get_parts(line, i));
     lab.lat = stod(get_parts(line, i));
     lab.lon = stod(get_parts(line, i));
     lab.district = stoi(get_parts(line, i));
@@ -62,6 +63,7 @@ void get_district(std::string &line, District &d)
 {
     int i = 0;
     d.id = stoi(get_parts(line, i));
+    d.id = stoi(get_parts(line, i));
     d.name = get_parts(line, i);
     d.lat = stod(get_parts(line, i));
     d.lon = stod(get_parts(line, i));
@@ -69,11 +71,11 @@ void get_district(std::string &line, District &d)
     d.total_capacity = 0;
 }
 
-void getinput()
+void getinput(char *distpath, char *labpath)
 {
     std::ifstream distin, labin;
-    distin.open("districts_data_v0.csv");
-    labin.open("lab_data_v0.csv");
+    distin.open(distpath);
+    labin.open(labpath);
     std::string line;
 
     getline(distin, line);
