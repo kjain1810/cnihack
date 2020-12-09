@@ -61,6 +61,7 @@ void get_lab(string &line, Lab &lab)
 {
     int i = 0;
     lab.id = stoi(get_parts(line, i));
+    lab.id = stoi(get_parts(line, i));
     lab.lat = stod(get_parts(line, i));
     lab.lon = stod(get_parts(line, i));
     lab.district = stoi(get_parts(line, i));
@@ -72,6 +73,7 @@ void get_lab(string &line, Lab &lab)
 void get_district(string &line, District &d)
 {
     int i = 0;
+    d.id = stoi(get_parts(line, i));
     d.id = stoi(get_parts(line, i));
     d.name = get_parts(line, i);
     d.lat = stod(get_parts(line, i));
@@ -179,8 +181,11 @@ void solve()
 signed main()
 {
     ifstream distin, labin;
-    distin.open("districts_data_v0.csv");
-    labin.open("lab_data_v0.csv");
+    // vector<string> data =
+    string dist_data = "district_sample_data_001.csv";
+    string lab_data = "lab_sample_data_001.csv";
+    distin.open(dist_data);
+    labin.open(lab_data);
     string line;
 
     getline(distin, line);
