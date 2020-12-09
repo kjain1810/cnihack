@@ -87,6 +87,7 @@ void get_lab(string &line, Lab &lab)
     lab.type = stoi(get_parts(line, i));
     lab.capacity = stoi(get_parts(line, i));
     lab.backlog = stoi(get_parts(line, i));
+    lab.capacity -= lab.backlog;
 }
 
 void get_district(string &line, District &d)
@@ -261,7 +262,7 @@ signed main()
     string suf = ".csv";
     string lab_data = "lab_sample_data_00";
     string solut = "solution_00";
-    int num = 4;
+    int num = 1;
     vector<string> poss = {"1", "2", "3", "4", "5"};
     ifstream trans;
     trans.open(solut + poss[num - 1] + suf); // Change this
