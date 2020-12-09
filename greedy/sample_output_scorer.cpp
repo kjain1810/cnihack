@@ -104,10 +104,10 @@ pair<pair<int, int>, pair<int, int>> get_trans(string &line)
 {
     int i = 0;
     pair<pair<int, int>, pair<int, int>> ans;
-    ans.first.first = stoi(get_words(line, i));
-    ans.first.second = stoi(get_words(line, i));
-    ans.second.first = stoi(get_words(line, i));
-    ans.second.second = stoi(get_words(line, i));
+    ans.first.first = stoi(get_parts(line, i));
+    ans.first.second = stoi(get_parts(line, i));
+    ans.second.first = stoi(get_parts(line, i));
+    ans.second.second = stoi(get_parts(line, i));
     return ans;
 }
 
@@ -257,9 +257,16 @@ double score()
 signed main()
 {
 
+    string dist_data = "district_sample_data_00";
+    string suf = ".csv";
+    string lab_data = "lab_sample_data_00";
+    string solut = "solution_00";
+    int num = 4;
+    vector<string> poss = {"1", "2", "3", "4", "5"};
     ifstream trans;
-    trans.open("transactions.out"); // Change this
+    trans.open(solut + poss[num - 1] + suf); // Change this
     string line;
+    getline(trans, line);
     while (getline(trans, line))
     {
         transactions.push_back(get_trans(line));
@@ -270,11 +277,6 @@ signed main()
     }
 
     ifstream distin, labin;
-    string dist_data = "district_sample_data_00";
-    string suf = ".csv";
-    string lab_data = "lab_sample_data_00";
-    vector<string> poss = {"1", "2", "3", "4", "5"};
-    int num = 5;
     distin.open(dist_data + poss[num - 1] + suf);
     labin.open(lab_data + poss[num - 1] + suf);
     // string line;
