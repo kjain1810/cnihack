@@ -6,6 +6,61 @@ const double kmR = 6373.0;
 const int N = 502, M = 52;
 double factor = 1;
 
+// #include <math.h>
+
+#define pi 3.14159265358979323846
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::  Function prototypes                                           :*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+double deg2rad(double);
+double rad2deg(double);
+
+double distance(double lat1, double lon1, double lat2, double lon2, char unit)
+{
+    double theta, dist;
+    if ((lat1 == lat2) && (lon1 == lon2))
+    {
+        return 0;
+    }
+    else
+    {
+        theta = lon1 - lon2;
+        dist = sin(deg2rad(lat1)) * sin(deg2rad(lat2)) + cos(deg2rad(lat1)) * cos(deg2rad(lat2)) * cos(deg2rad(theta));
+        dist = acos(dist);
+        dist = rad2deg(dist);
+        dist = dist * 60 * 1.1515;
+        switch (unit)
+        {
+        case 'M':
+            break;
+        case 'K':
+            dist = dist * 1.609344;
+            break;
+        case 'N':
+            dist = dist * 0.8684;
+            break;
+        }
+        return (dist);
+    }
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::  This function converts decimal degrees to radians             :*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+double deg2rad(double deg)
+{
+    return (deg * pi / 180);
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::  This function converts radians to decimal degrees             :*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+double rad2deg(double rad)
+{
+    return (rad * 180 / pi);
+}
+
 int num_districts = 0, num_labs = 0;
 
 double toRadians(double degree)
@@ -146,6 +201,11 @@ double score()
                 cout << "No samples left to send\n";
                 exit(0);
             }
+            // if (totcost == 83780000.0)
+            // {
+            //     cout << " POOO";
+            //     // cout << lab_cost << " POOO";
+            // }
             if (labz[lab].capacity >= amt)
             {
                 int lab_cost = (labz[lab].type == 0) ? 800 : 1600;
@@ -179,7 +239,9 @@ double score()
             districts[dist].samples -= amt;
             totcost += 10000 * amt;
         }
+        // cout << totcost << '\n';
     }
+    // cout << totcost << '\n';
     for (int i = 1; i <= num_districts; i++)
     {
         int cnt = 0;
@@ -196,7 +258,7 @@ double score()
             for (auto tr2 : district_transfer[i])
             {
                 int lab2 = tr2.second.first;
-                if (calcdist(labz[lab].lat, labz[lab].lon, labz[lab2].lat, labz[lab2].lon) > 40)
+                if (distance(labz[lab].lat, labz[lab].lon, labz[lab2].lat, labz[lab2].lon, 'K') > 40)
                 {
                     cout << "District " << dist << " sending samples to labs " << lab << " and " << lab2 << " which are more than 40km apart\n";
                     exit(0);
@@ -207,7 +269,7 @@ double score()
             continue;
         lat = lat / (double(cnt));
         lon = lon / (double(cnt));
-        double dist = calcdist(districts[i].lat, districts[i].lon, lat, lon);
+        double dist = distance(districts[i].lat, districts[i].lon, lat, lon, 'K');
         totcost += 1000 * dist;
     }
 
