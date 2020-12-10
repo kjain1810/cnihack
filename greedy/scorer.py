@@ -1,3 +1,4 @@
+from geopy.distance import geodesic
 from math import radians, sin, cos, acos
 import pandas as pd
 from copy import deepcopy
@@ -22,29 +23,31 @@ def distance(lat1d, lon1d,  lat2d, lon2d):
 
 
 def dist2(lat1, lon1, lat2, lon2):
-    R = 6373.0
+    # R = 6373.0
 
-    lat1a = math.radians(lat1)
-    lon1a = math.radians(lon1)
-    lat2a = math.radians(lat2)
-    lon2a = math.radians(lon2)
+    # lat1a = math.radians(lat1)
+    # lon1a = math.radians(lon1)
+    # lat2a = math.radians(lat2)
+    # lon2a = math.radians(lon2)
 
-    # dlon = lon2 - lon1
+    # # dlon = lon2 - lon1
 
-    # dlat = lat2 - lat1
+    # # dlat = lat2 - lat1
 
-    # a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
+    # # a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
 
-    # c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    # distance = R * c
-    distance = 6371.01 * acos(sin(lat1a)*sin(lat2a) +
-                              cos(lat1a)*cos(lat2a)*cos(lon1a - lon2a))
-    # print(distance)
+    # # c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    # # distance = R * c
+    # distance = 6371.01 * acos(sin(lat1a)*sin(lat2a) +
+    #                           cos(lat1a)*cos(lat2a)*cos(lon1a - lon2a))
+    # # print(distance)
+
+    distance = geodesic((lat1, lon1), (lat2, lon2)).km
     return distance
 
 
 transactions = pd.read_csv("transactions.csv")
-num = 1
+num = 3
 districts = pd.read_csv("district_sample_data_00"+str(num)+".csv")
 labs = pd.read_csv("lab_sample_data_00"+str(num)+".csv")
 labs['capacity'] -= labs['backlogs']
