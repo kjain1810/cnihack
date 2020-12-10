@@ -1,0 +1,381 @@
+Optimal Cost = 139107934.93352842
+Model Size = 39205
+Run solver for  300 seconds
+
+
+
+Lab: 0 	Type: 0 	Capacity = 2649 	Tested = 2749 	Samples overloaded = 100
+Lab: 1 	Type: 0 	Capacity = 2886 	Tested = 2986 	Samples overloaded = 100
+Lab: 2 	Type: 0 	Capacity = 754 	Tested = 854 	Samples overloaded = 100
+Lab: 3 	Type: 0 	Capacity = 1218 	Tested = 1318 	Samples overloaded = 100
+Lab: 4 	Type: 0 	Capacity = 1641 	Tested = 1741 	Samples overloaded = 100
+Lab: 5 	Type: 0 	Capacity = 938 	Tested = 1038 	Samples overloaded = 100
+Lab: 6 	Type: 0 	Capacity = 2996 	Tested = 3096 	Samples overloaded = 100
+Lab: 7 	Type: 0 	Capacity = 1513 	Tested = 1613 	Samples overloaded = 100
+Lab: 8 	Type: 0 	Capacity = 1895 	Tested = 1995 	Samples overloaded = 100
+Lab: 9 	Type: 0 	Capacity = 697 	Tested = 797 	Samples overloaded = 100
+Lab: 10 	Type: 0 	Capacity = 1343 	Tested = 1443 	Samples overloaded = 100
+Lab: 11 	Type: 1 	Capacity = 2249 	Tested = 2349 	Samples overloaded = 100
+Lab: 12 	Type: 0 	Capacity = 1658 	Tested = 1758 	Samples overloaded = 100
+Lab: 13 	Type: 0 	Capacity = 852 	Tested = 952 	Samples overloaded = 100
+Lab: 14 	Type: 0 	Capacity = 2201 	Tested = 2301 	Samples overloaded = 100
+Lab: 15 	Type: 0 	Capacity = 1058 	Tested = 1158 	Samples overloaded = 100
+Lab: 16 	Type: 0 	Capacity = 694 	Tested = 794 	Samples overloaded = 100
+Lab: 17 	Type: 0 	Capacity = 457 	Tested = 520 	Samples overloaded = 63
+Lab: 18 	Type: 0 	Capacity = 790 	Tested = 890 	Samples overloaded = 100
+Lab: 19 	Type: 0 	Capacity = 668 	Tested = 768 	Samples overloaded = 100
+Lab: 20 	Type: 1 	Capacity = 2040 	Tested = 2140 	Samples overloaded = 100
+Lab: 21 	Type: 1 	Capacity = 181 	Tested = 281 	Samples overloaded = 100
+Lab: 22 	Type: 1 	Capacity = 1370 	Tested = 1470 	Samples overloaded = 100
+Lab: 23 	Type: 1 	Capacity = 1360 	Tested = 1460 	Samples overloaded = 100
+Lab: 24 	Type: 1 	Capacity = 1012 	Tested = 1112 	Samples overloaded = 100
+Lab: 25 	Type: 1 	Capacity = 907 	Tested = 1007 	Samples overloaded = 100
+Lab: 26 	Type: 1 	Capacity = 381 	Tested = 481 	Samples overloaded = 100
+Lab: 27 	Type: 1 	Capacity = 788 	Tested = 888 	Samples overloaded = 100
+Lab: 28 	Type: 1 	Capacity = 1048 	Tested = 1148 	Samples overloaded = 100
+Lab: 29 	Type: 1 	Capacity = 538 	Tested = 638 	Samples overloaded = 100
+Lab: 30 	Type: 1 	Capacity = 2049 	Tested = 2149 	Samples overloaded = 100
+Lab: 31 	Type: 1 	Capacity = 102 	Tested = 202 	Samples overloaded = 100
+Lab: 32 	Type: 1 	Capacity = 1986 	Tested = 2077 	Samples overloaded = 91
+Lab: 33 	Type: 1 	Capacity = 513 	Tested = 613 	Samples overloaded = 100
+Lab: 34 	Type: 1 	Capacity = 875 	Tested = 975 	Samples overloaded = 100
+Lab: 35 	Type: 1 	Capacity = 128 	Tested = 228 	Samples overloaded = 100
+Lab: 36 	Type: 1 	Capacity = 803 	Tested = 903 	Samples overloaded = 100
+Lab: 37 	Type: 1 	Capacity = 731 	Tested = 831 	Samples overloaded = 100
+Lab: 38 	Type: 1 	Capacity = 518 	Tested = 618 	Samples overloaded = 100
+Lab: 39 	Type: 1 	Capacity = 110 	Tested = 210 	Samples overloaded = 100
+Lab: 40 	Type: 0 	Capacity = 750 	Tested = 850 	Samples overloaded = 100
+Lab: 41 	Type: 0 	Capacity = 822 	Tested = 922 	Samples overloaded = 100
+Lab: 42 	Type: 0 	Capacity = 42 	Tested = 142 	Samples overloaded = 100
+Lab: 43 	Type: 0 	Capacity = 99 	Tested = 199 	Samples overloaded = 100
+Lab: 44 	Type: 0 	Capacity = 393 	Tested = 493 	Samples overloaded = 100
+Lab: 45 	Type: 0 	Capacity = 532 	Tested = 632 	Samples overloaded = 100
+Lab: 46 	Type: 1 	Capacity = 523 	Tested = 623 	Samples overloaded = 100
+Lab: 47 	Type: 1 	Capacity = 175 	Tested = 275 	Samples overloaded = 100
+Lab: 48 	Type: 1 	Capacity = 85 	Tested = 185 	Samples overloaded = 100
+Lab: 49 	Type: 1 	Capacity = 100 	Tested = 200 	Samples overloaded = 100
+Lab: 50 	Type: 0 	Capacity = 47 	Tested = 147 	Samples overloaded = 100
+Lab: 51 	Type: 0 	Capacity = 937 	Tested = 1037 	Samples overloaded = 100
+Lab: 52 	Type: 0 	Capacity = 1475 	Tested = 1575 	Samples overloaded = 100
+Lab: 53 	Type: 0 	Capacity = 103 	Tested = 203 	Samples overloaded = 100
+Lab: 54 	Type: 0 	Capacity = 41 	Tested = 141 	Samples overloaded = 100
+Lab: 55 	Type: 0 	Capacity = 683 	Tested = 783 	Samples overloaded = 100
+Lab: 56 	Type: 0 	Capacity = 101 	Tested = 201 	Samples overloaded = 100
+Lab: 57 	Type: 0 	Capacity = 643 	Tested = 743 	Samples overloaded = 100
+Lab: 58 	Type: 0 	Capacity = 114 	Tested = 214 	Samples overloaded = 100
+Lab: 59 	Type: 0 	Capacity = 74 	Tested = 174 	Samples overloaded = 100
+Lab: 60 	Type: 0 	Capacity = 151 	Tested = 251 	Samples overloaded = 100
+Lab: 61 	Type: 0 	Capacity = 176 	Tested = 276 	Samples overloaded = 100
+Lab: 62 	Type: 0 	Capacity = 963 	Tested = 1063 	Samples overloaded = 100
+Lab: 63 	Type: 0 	Capacity = 927 	Tested = 1027 	Samples overloaded = 100
+Lab: 64 	Type: 0 	Capacity = 2380 	Tested = 2480 	Samples overloaded = 100
+Lab: 65 	Type: 0 	Capacity = 157 	Tested = 257 	Samples overloaded = 100
+Lab: 66 	Type: 1 	Capacity = 1399 	Tested = 1499 	Samples overloaded = 100
+Lab: 67 	Type: 0 	Capacity = 414 	Tested = 514 	Samples overloaded = 100
+Lab: 68 	Type: 0 	Capacity = 905 	Tested = 1005 	Samples overloaded = 100
+Lab: 69 	Type: 1 	Capacity = 503 	Tested = 603 	Samples overloaded = 100
+Lab: 70 	Type: 1 	Capacity = 578 	Tested = 653 	Samples overloaded = 75
+Lab: 71 	Type: 1 	Capacity = 170 	Tested = 270 	Samples overloaded = 100
+Lab: 72 	Type: 1 	Capacity = 64 	Tested = 164 	Samples overloaded = 100
+Lab: 73 	Type: 0 	Capacity = 168 	Tested = 268 	Samples overloaded = 100
+Lab: 74 	Type: 1 	Capacity = 168 	Tested = 268 	Samples overloaded = 100
+Lab: 75 	Type: 1 	Capacity = 32 	Tested = 32 	Samples overloaded = 0
+Lab: 76 	Type: 1 	Capacity = 2195 	Tested = 2295 	Samples overloaded = 100
+Lab: 77 	Type: 0 	Capacity = 1366 	Tested = 1466 	Samples overloaded = 100
+Lab: 78 	Type: 1 	Capacity = 392 	Tested = 492 	Samples overloaded = 100
+Lab: 79 	Type: 0 	Capacity = 742 	Tested = 842 	Samples overloaded = 100
+Lab: 80 	Type: 1 	Capacity = 23 	Tested = 53 	Samples overloaded = 30
+Lab: 81 	Type: 1 	Capacity = 1244 	Tested = 1344 	Samples overloaded = 100
+Lab: 82 	Type: 1 	Capacity = 1450 	Tested = 1550 	Samples overloaded = 100
+Lab: 83 	Type: 1 	Capacity = 538 	Tested = 560 	Samples overloaded = 22
+Lab: 84 	Type: 1 	Capacity = 2006 	Tested = 2106 	Samples overloaded = 100
+Lab: 85 	Type: 1 	Capacity = 657 	Tested = 757 	Samples overloaded = 100
+
+
+
+District headquater 0 	 distributed 692 	samples internally, out of 1198 in the following manner:
+District 0 	 has sent 199 	 samples to lab 43
+District 0 	 has sent 493 	 samples to lab 44
+
+District headquater 1 	 distributed 1190 	samples internally, out of 2012 in the following manner:
+District 1 	 has sent 952 	 samples to lab 13
+District 1 	 has sent 100 	 samples to lab 41
+District 1 	 has sent 108 	 samples to lab 47
+District 1 	 has sent 30 	 samples to lab 80
+
+District headquater 2 	 distributed 672 	samples internally, out of 1481 in the following manner:
+District 2 	 has sent 672 	 samples to lab 8
+
+District headquater 3 	 distributed 0 	samples internally, out of 2102 in the following manner:
+
+District headquater 4 	 distributed 37768 	samples internally, out of 39412 in the following manner:
+District 4 	 has sent 2749 	 samples to lab 0
+District 4 	 has sent 2986 	 samples to lab 1
+District 4 	 has sent 854 	 samples to lab 2
+District 4 	 has sent 1613 	 samples to lab 7
+District 4 	 has sent 2349 	 samples to lab 11
+District 4 	 has sent 2301 	 samples to lab 14
+District 4 	 has sent 1158 	 samples to lab 15
+District 4 	 has sent 2140 	 samples to lab 20
+District 4 	 has sent 281 	 samples to lab 21
+District 4 	 has sent 1470 	 samples to lab 22
+District 4 	 has sent 1460 	 samples to lab 23
+District 4 	 has sent 1112 	 samples to lab 24
+District 4 	 has sent 1007 	 samples to lab 25
+District 4 	 has sent 481 	 samples to lab 26
+District 4 	 has sent 1148 	 samples to lab 28
+District 4 	 has sent 2149 	 samples to lab 30
+District 4 	 has sent 202 	 samples to lab 31
+District 4 	 has sent 975 	 samples to lab 34
+District 4 	 has sent 618 	 samples to lab 38
+District 4 	 has sent 210 	 samples to lab 39
+District 4 	 has sent 623 	 samples to lab 46
+District 4 	 has sent 185 	 samples to lab 48
+District 4 	 has sent 200 	 samples to lab 49
+District 4 	 has sent 174 	 samples to lab 59
+District 4 	 has sent 514 	 samples to lab 67
+District 4 	 has sent 603 	 samples to lab 69
+District 4 	 has sent 270 	 samples to lab 71
+District 4 	 has sent 163 	 samples to lab 72
+District 4 	 has sent 268 	 samples to lab 73
+District 4 	 has sent 210 	 samples to lab 74
+District 4 	 has sent 2295 	 samples to lab 76
+District 4 	 has sent 1344 	 samples to lab 81
+District 4 	 has sent 1550 	 samples to lab 82
+District 4 	 has sent 2106 	 samples to lab 84
+
+District headquater 5 	 distributed 378 	samples internally, out of 577 in the following manner:
+District 5 	 has sent 378 	 samples to lab 64
+
+District headquater 6 	 distributed 770 	samples internally, out of 771 in the following manner:
+District 6 	 has sent 520 	 samples to lab 17
+District 6 	 has sent 250 	 samples to lab 60
+
+District headquater 7 	 distributed 777 	samples internally, out of 1106 in the following manner:
+District 7 	 has sent 100 	 samples to lab 50
+District 7 	 has sent 677 	 samples to lab 51
+
+District headquater 8 	 distributed 203 	samples internally, out of 1325 in the following manner:
+District 8 	 has sent 203 	 samples to lab 53
+
+District headquater 9 	 distributed 214 	samples internally, out of 1082 in the following manner:
+District 9 	 has sent 214 	 samples to lab 58
+
+District headquater 10 	 distributed 767 	samples internally, out of 2435 in the following manner:
+District 10 	 has sent 100 	 samples to lab 9
+District 10 	 has sent 100 	 samples to lab 27
+District 10 	 has sent 133 	 samples to lab 33
+District 10 	 has sent 228 	 samples to lab 35
+District 10 	 has sent 100 	 samples to lab 36
+District 10 	 has sent 106 	 samples to lab 85
+
+District headquater 11 	 distributed 463 	samples internally, out of 1434 in the following manner:
+District 11 	 has sent 263 	 samples to lab 29
+District 11 	 has sent 100 	 samples to lab 37
+District 11 	 has sent 100 	 samples to lab 77
+
+District headquater 12 	 distributed 1734 	samples internally, out of 1765 in the following manner:
+District 12 	 has sent 100 	 samples to lab 10
+District 12 	 has sent 1634 	 samples to lab 12
+
+District headquater 13 	 distributed 648 	samples internally, out of 838 in the following manner:
+District 13 	 has sent 648 	 samples to lab 19
+
+District headquater 14 	 distributed 179 	samples internally, out of 2651 in the following manner:
+District 14 	 has sent 179 	 samples to lab 4
+
+District headquater 15 	 distributed 842 	samples internally, out of 962 in the following manner:
+District 15 	 has sent 842 	 samples to lab 79
+
+District headquater 16 	 distributed 1519 	samples internally, out of 1519 in the following manner:
+District 16 	 has sent 1444 	 samples to lab 6
+District 16 	 has sent 75 	 samples to lab 70
+
+District headquater 17 	 distributed 100 	samples internally, out of 583 in the following manner:
+District 17 	 has sent 100 	 samples to lab 68
+
+District headquater 18 	 distributed 604 	samples internally, out of 1011 in the following manner:
+District 18 	 has sent 100 	 samples to lab 65
+District 18 	 has sent 404 	 samples to lab 66
+District 18 	 has sent 100 	 samples to lab 78
+
+District headquater 19 	 distributed 604 	samples internally, out of 1059 in the following manner:
+District 19 	 has sent 604 	 samples to lab 52
+
+District headquater 20 	 distributed 1025 	samples internally, out of 1930 in the following manner:
+District 20 	 has sent 794 	 samples to lab 16
+District 20 	 has sent 231 	 samples to lab 83
+
+District headquater 21 	 distributed 1318 	samples internally, out of 4254 in the following manner:
+District 21 	 has sent 1318 	 samples to lab 3
+
+District headquater 22 	 distributed 218 	samples internally, out of 822 in the following manner:
+District 22 	 has sent 218 	 samples to lab 63
+
+District headquater 23 	 distributed 276 	samples internally, out of 716 in the following manner:
+District 23 	 has sent 100 	 samples to lab 61
+District 23 	 has sent 176 	 samples to lab 62
+
+District headquater 24 	 distributed 1702 	samples internally, out of 2665 in the following manner:
+District 24 	 has sent 813 	 samples to lab 5
+District 24 	 has sent 889 	 samples to lab 18
+
+District headquater 25 	 distributed 850 	samples internally, out of 1972 in the following manner:
+District 25 	 has sent 850 	 samples to lab 40
+
+District headquater 26 	 distributed 1353 	samples internally, out of 1579 in the following manner:
+District 26 	 has sent 511 	 samples to lab 32
+District 26 	 has sent 100 	 samples to lab 56
+District 26 	 has sent 742 	 samples to lab 57
+
+District headquater 27 	 distributed 632 	samples internally, out of 1137 in the following manner:
+District 27 	 has sent 632 	 samples to lab 45
+
+District headquater 28 	 distributed 142 	samples internally, out of 1128 in the following manner:
+District 28 	 has sent 142 	 samples to lab 42
+
+District headquater 29 	 distributed 320 	samples internally, out of 859 in the following manner:
+District 29 	 has sent 100 	 samples to lab 54
+District 29 	 has sent 220 	 samples to lab 55
+
+
+
+
+Disrict 0 	 has sent 506 	 samples to centroid 157 	 with labs = [6, 70] 	 with distance = 179.46411541614967
+District 0 	 sent 914 	 samples to lab 6
+District 0 	 sent 578 	 samples to lab 70
+
+Disrict 1 	 has sent 822 	 samples to centroid 361 	 with labs = [41] 	 with distance = 2.045420815715974
+District 1 	 sent 822 	 samples to lab 41
+
+Disrict 2 	 has sent 809 	 samples to centroid 271 	 with labs = [63] 	 with distance = 128.6853854316971
+District 2 	 sent 809 	 samples to lab 63
+
+Disrict 3 	 has sent 2102 	 samples to centroid 190 	 with labs = [64] 	 with distance = 512.4969368632426
+District 3 	 sent 2102 	 samples to lab 64
+
+Disrict 4 	 has sent 1644 	 samples to centroid 203 	 with labs = [65, 66, 78] 	 with distance = 63.39648256809789
+District 4 	 sent 157 	 samples to lab 65
+District 4 	 sent 1095 	 samples to lab 66
+District 4 	 sent 392 	 samples to lab 78
+
+Disrict 5 	 has sent 199 	 samples to centroid 331 	 with labs = [6] 	 with distance = 96.40915901155702
+District 5 	 sent 738 	 samples to lab 6
+
+Disrict 6 	 has sent 1 	 samples to centroid 320 	 with labs = [60] 	 with distance = 0.438865779712108
+District 6 	 sent 1 	 samples to lab 60
+
+Disrict 7 	 has sent 329 	 samples to centroid 272 	 with labs = [83] 	 with distance = 120.41317744952876
+District 7 	 sent 329 	 samples to lab 83
+
+Disrict 8 	 has sent 1122 	 samples to centroid 207 	 with labs = [4] 	 with distance = 49.19312964826704
+District 8 	 sent 1562 	 samples to lab 4
+
+Disrict 9 	 has sent 868 	 samples to centroid 232 	 with labs = [8] 	 with distance = 115.73356454323697
+District 9 	 sent 1323 	 samples to lab 8
+
+Disrict 10 	 has sent 1668 	 samples to centroid 151 	 with labs = [32, 56, 57] 	 with distance = 51.69680479294997
+District 10 	 sent 1566 	 samples to lab 32
+District 10 	 sent 101 	 samples to lab 56
+District 10 	 sent 1 	 samples to lab 57
+
+Disrict 11 	 has sent 971 	 samples to centroid 255 	 with labs = [52] 	 with distance = 102.00507078336324
+District 11 	 sent 971 	 samples to lab 52
+
+Disrict 12 	 has sent 31 	 samples to centroid 323 	 with labs = [75] 	 with distance = 0.315670386039621
+District 12 	 sent 31 	 samples to lab 75
+
+Disrict 13 	 has sent 190 	 samples to centroid 319 	 with labs = [47, 80] 	 with distance = 129.86734207295012
+District 13 	 sent 167 	 samples to lab 47
+District 13 	 sent 23 	 samples to lab 80
+
+Disrict 14 	 has sent 2472 	 samples to centroid 182 	 with labs = [29, 37, 77] 	 with distance = 162.87228955624036
+District 14 	 sent 375 	 samples to lab 29
+District 14 	 sent 731 	 samples to lab 37
+District 14 	 sent 1366 	 samples to lab 77
+
+Disrict 15 	 has sent 120 	 samples to centroid 282 	 with labs = [19] 	 with distance = 68.79324209203233
+District 15 	 sent 120 	 samples to lab 19
+
+Disrict 17 	 has sent 483 	 samples to centroid 156 	 with labs = [9, 27, 33, 36] 	 with distance = 105.54758427440878
+District 17 	 sent 1 	 samples to lab 9
+District 17 	 sent 1 	 samples to lab 27
+District 17 	 sent 480 	 samples to lab 33
+District 17 	 sent 1 	 samples to lab 36
+
+Disrict 18 	 has sent 407 	 samples to centroid 263 	 with labs = [50, 51] 	 with distance = 55.16201346470155
+District 18 	 sent 47 	 samples to lab 50
+District 18 	 sent 360 	 samples to lab 51
+
+Disrict 19 	 has sent 455 	 samples to centroid 232 	 with labs = [8] 	 with distance = 82.9314375290548
+District 19 	 sent 1323 	 samples to lab 8
+
+Disrict 20 	 has sent 905 	 samples to centroid 279 	 with labs = [68] 	 with distance = 125.78010997562883
+District 20 	 sent 905 	 samples to lab 68
+
+Disrict 21 	 has sent 2936 	 samples to centroid 158 	 with labs = [9, 27, 36, 85] 	 with distance = 203.34634548269426
+District 21 	 sent 696 	 samples to lab 9
+District 21 	 sent 787 	 samples to lab 27
+District 21 	 sent 802 	 samples to lab 36
+District 21 	 sent 651 	 samples to lab 85
+
+Disrict 22 	 has sent 604 	 samples to centroid 261 	 with labs = [54, 55] 	 with distance = 64.38464803026774
+District 22 	 sent 41 	 samples to lab 54
+District 22 	 sent 563 	 samples to lab 55
+
+Disrict 23 	 has sent 440 	 samples to centroid 207 	 with labs = [4] 	 with distance = 131.8940858493765
+District 23 	 sent 1562 	 samples to lab 4
+
+Disrict 24 	 has sent 963 	 samples to centroid 334 	 with labs = [10] 	 with distance = 165.42110386227216
+District 24 	 sent 963 	 samples to lab 10
+
+Disrict 25 	 has sent 1122 	 samples to centroid 254 	 with labs = [61, 62, 72, 74] 	 with distance = 66.5720535602404
+District 25 	 sent 176 	 samples to lab 61
+District 25 	 sent 887 	 samples to lab 62
+District 25 	 sent 1 	 samples to lab 72
+District 25 	 sent 58 	 samples to lab 74
+
+Disrict 26 	 has sent 226 	 samples to centroid 233 	 with labs = [5, 18] 	 with distance = 110.90269833170692
+District 26 	 sent 225 	 samples to lab 5
+District 26 	 sent 1 	 samples to lab 18
+
+Disrict 27 	 has sent 505 	 samples to centroid 154 	 with labs = [10, 12, 75] 	 with distance = 130.47074444759525
+District 27 	 sent 380 	 samples to lab 10
+District 27 	 sent 124 	 samples to lab 12
+District 27 	 sent 1 	 samples to lab 75
+
+Disrict 28 	 has sent 986 	 samples to centroid 157 	 with labs = [6, 70] 	 with distance = 131.35182470410675
+District 28 	 sent 914 	 samples to lab 6
+District 28 	 sent 578 	 samples to lab 70
+
+Disrict 29 	 has sent 539 	 samples to centroid 331 	 with labs = [6] 	 with distance = 69.13877148798075
+District 29 	 sent 738 	 samples to lab 6
+
+
+
+
+At centroid 151 	 incoming = 1668 	 outgoing = 1668 	 capacity= 2730 	 whose labs = [32, 56, 57]
+At centroid 154 	 incoming = 505 	 outgoing = 505 	 capacity= 3033 	 whose labs = [10, 12, 75]
+At centroid 156 	 incoming = 483 	 outgoing = 483 	 capacity= 2801 	 whose labs = [9, 27, 33, 36]
+At centroid 157 	 incoming = 1492 	 outgoing = 1492 	 capacity= 3574 	 whose labs = [6, 70]
+At centroid 158 	 incoming = 2936 	 outgoing = 2936 	 capacity= 2945 	 whose labs = [9, 27, 36, 85]
+At centroid 182 	 incoming = 2472 	 outgoing = 2472 	 capacity= 2635 	 whose labs = [29, 37, 77]
+At centroid 190 	 incoming = 2102 	 outgoing = 2102 	 capacity= 2380 	 whose labs = [64]
+At centroid 203 	 incoming = 1644 	 outgoing = 1644 	 capacity= 1948 	 whose labs = [65, 66, 78]
+At centroid 207 	 incoming = 1562 	 outgoing = 1562 	 capacity= 1641 	 whose labs = [4]
+At centroid 232 	 incoming = 1323 	 outgoing = 1323 	 capacity= 1895 	 whose labs = [8]
+At centroid 233 	 incoming = 226 	 outgoing = 226 	 capacity= 1728 	 whose labs = [5, 18]
+At centroid 254 	 incoming = 1122 	 outgoing = 1122 	 capacity= 1371 	 whose labs = [61, 62, 72, 74]
+At centroid 255 	 incoming = 971 	 outgoing = 971 	 capacity= 1475 	 whose labs = [52]
+At centroid 261 	 incoming = 604 	 outgoing = 604 	 capacity= 724 	 whose labs = [54, 55]
+At centroid 263 	 incoming = 407 	 outgoing = 407 	 capacity= 984 	 whose labs = [50, 51]
+At centroid 271 	 incoming = 809 	 outgoing = 809 	 capacity= 927 	 whose labs = [63]
+At centroid 272 	 incoming = 329 	 outgoing = 329 	 capacity= 538 	 whose labs = [83]
+At centroid 279 	 incoming = 905 	 outgoing = 905 	 capacity= 905 	 whose labs = [68]
+At centroid 282 	 incoming = 120 	 outgoing = 120 	 capacity= 668 	 whose labs = [19]
+At centroid 319 	 incoming = 190 	 outgoing = 190 	 capacity= 198 	 whose labs = [47, 80]
+At centroid 320 	 incoming = 1 	 outgoing = 1 	 capacity= 151 	 whose labs = [60]
+At centroid 323 	 incoming = 31 	 outgoing = 31 	 capacity= 32 	 whose labs = [75]
+At centroid 331 	 incoming = 738 	 outgoing = 738 	 capacity= 2996 	 whose labs = [6]
+At centroid 334 	 incoming = 963 	 outgoing = 963 	 capacity= 1343 	 whose labs = [10]
+At centroid 361 	 incoming = 822 	 outgoing = 822 	 capacity= 822 	 whose labs = [41]
