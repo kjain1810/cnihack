@@ -6,18 +6,21 @@ The test data files to be run must be present in this folder.
 
 ## Instructions to run greedy
 
-The varable `num` in line #198 of greedy.cpp must be changed to the required test file number.
-
-The following commands must be run to get the greedy solution.
+The following commands must be run to get the greedy solution with `num` between 1-5 to denote which test file/solution.
 ```
 g++ greedy.cpp -o greedy
-./greedy > solution_00{num}.csv
+./greedy [number] > solution_00{number}.csv
 ```
 
 ## Instructions to run scorer
 
-The varable `num` in line #18 of scorer.py must be changed to the required test file number.
+Assuming all the names of test file and solution are in the given format, run the following command to get the score on a specific test case:
+```
+python3 scorer.py [fileNumber]
+```
 
+Note that `fileNumber` should be between 1-5. For example, 
 ```
-python3 scorer.py
+python3 scorer.py 3
 ```
+outputs the score for solution of 3rd test data.
