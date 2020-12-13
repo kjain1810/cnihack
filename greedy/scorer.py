@@ -15,17 +15,17 @@ def dist2(lat1, lon1, lat2, lon2):
 
 
 # Loader for sample data
-num = 3
+num = 1
 # transactions = pd.read_csv("solution_00"+str(num)+".csv")
-transactions = pd.read_csv("transactions.csv")
-districts = pd.read_csv("district_sample_data_00"+str(num)+".csv")
-labs = pd.read_csv("lab_sample_data_00"+str(num)+".csv")
+# transactions = pd.read_csv("transactions.csv")
+# districts = pd.read_csv("district_sample_data_00"+str(num)+".csv")
+# labs = pd.read_csv("lab_sample_data_00"+str(num)+".csv")
 
 
 # Loader for test data
-# transactions = pd.read_csv("transactions.csv")
-# districts = pd.read_csv("district_test_data_002.csv")
-# labs = pd.read_csv("lab_test_data_002.csv")
+transactions = pd.read_csv("transactions.csv")
+districts = pd.read_csv("district_test_data_00"+str(num)+".csv")
+labs = pd.read_csv("lab_test_data_00"+str(num)+".csv")
 
 labs['capacity'] -= labs['backlogs']
 

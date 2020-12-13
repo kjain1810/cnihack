@@ -189,11 +189,13 @@ signed main()
 {
     // Reader for input files
     ifstream distin, labin;
-    string dist_data = "district_sample_data_00";
+    // string dist_data = "district_sample_data_00";
+    string dist_data = "district_test_data_00";
     string suf = ".csv";
-    string lab_data = "lab_sample_data_00";
+    // string lab_data = "lab_sample_data_00";
+    string lab_data = "lab_test_data_00";
     vector<string> poss = {"1", "2", "3", "4", "5"};
-    int num = 3;
+    int num = 1;
     distin.open(dist_data + poss[num - 1] + suf);
     labin.open(lab_data + poss[num - 1] + suf);
     string line;
