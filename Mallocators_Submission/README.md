@@ -27,6 +27,14 @@ To vary the time limit of the solver, go to the bottom of the file and change `o
 
 ### Giving custom centroids as input 
 
+A specific list of centroids can be given as input, instead of using the default `centroidsv6.txt`. To achieve this, run the following command:
+
+```
+python3 MIPsolver.py [input_district_file] [input_lab_file] [centroids_file]
+```
+
+Notice that this is an optional argument and may be avoided if the default centroids are sufficient for the purposes.
+
 ### Giving pre-formed district-centroid connections to be directly fed to the MIP
 
 #### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
