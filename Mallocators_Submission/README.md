@@ -13,10 +13,10 @@ To run the Mixed Integer Programming (MIP) solution, we first need to install th
 To install each of the libary, run the following command on the terminal:
 
 ```
-> python3 -m pip install [libraryName]
+> python3 -m pip install [library_name]
 ```
 
-where `libraryName` is the name of the library, like `mip`.
+where `library_name` is the name of the library, like `mip`.
 
 To run the solver in its most basic form, run the following command
 ```
