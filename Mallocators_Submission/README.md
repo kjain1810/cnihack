@@ -37,7 +37,17 @@ Notice that this is an optional argument and may be avoided if the default centr
 
 ### Giving pre-formed district-centroid connections to be directly fed to the MIP
 
-#### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
+By default, for a given centroids list, all the districts are connected to all the centroids. However, there may be redundancy in such a vast model and one may want to prepare special connections to cater these concerns. If you have a list of district centroid connections (for example, see `connections.txt` which specifies the format and has pairing of district with centroids based on `Centroidsv0.txt`), then you can pass that as an argument too to directly load the connections instead of forming them. These district-centroid connections loaded will be directly fed to MIP as input. 
+
+To achieve this purpose, run the following command:
+
+```
+python3 MIPsolver.py [input_district_file] [input_lab_file] [centroids_file] [district_centroid_connections_file]
+```
+
+Notice that this is also an optional argument. Also note that the `centroids_file` should have all the clusters upon which `district_centroid_connection_file` should be based. 
+
+##### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
 
 ## Instructions to run greedy
 
