@@ -942,12 +942,21 @@ loadInput()
 n = len(districts)
 m = len(labs)
 
-# loadCentroids()
-loadCentroids("Centroidsv0.txt")
-loadPairs()
-c = len(centroids)
-loadCentroids("handcraftedCentroids.txt")
-formAllPairs(c)
+argc = len(sys.argv)
+
+if argc <= 3:
+	# loadCentroids()
+	loadCentroids("Centroidsv0.txt")
+	loadPairs()
+	c = len(centroids)
+	loadCentroids("handcraftedCentroids.txt")
+	formAllPairs(c)
+else :
+	loadCentroids(sys.argv[3])
+	if argv >= 5:
+		loadPairs(sys.argv[4])
+	else :
+		formAllPairs()
 
 c = len(centroids)
 TIMER = 600 # 10 mins 

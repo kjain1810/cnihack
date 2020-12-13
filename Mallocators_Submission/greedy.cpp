@@ -185,7 +185,7 @@ void solve()
     }
 }
 
-signed main()
+signed main(int argc, char* argv[])
 {
     // Reader for input files
     ifstream distin, labin;
@@ -195,7 +195,7 @@ signed main()
     // string lab_data = "lab_sample_data_00";
     string lab_data = "lab_test_data_00";
     vector<string> poss = {"1", "2", "3", "4", "5"};
-    int num = 1;
+    int num = stoi(argv[1]);
     distin.open(dist_data + poss[num - 1] + suf);
     labin.open(lab_data + poss[num - 1] + suf);
     string line;

@@ -3,7 +3,7 @@ from math import radians, sin, cos, acos
 import pandas as pd
 from copy import deepcopy
 import math
-
+import sys
 
 def dist2(lat1, lon1, lat2, lon2):
     """
@@ -15,7 +15,7 @@ def dist2(lat1, lon1, lat2, lon2):
 
 
 # Loader for sample data
-num = 1
+num = int(sys.argv[1])
 # transactions = pd.read_csv("solution_00"+str(num)+".csv")
 # transactions = pd.read_csv("transactions.csv")
 # districts = pd.read_csv("district_sample_data_00"+str(num)+".csv")
