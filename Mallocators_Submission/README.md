@@ -1,6 +1,10 @@
 # Instructions to run the code
 
-To run the file, we first need to install the following libraries in Python (3.6+):
+All of the test data files (district and lab data) need to be be present in this folder.
+
+## Instructions to run MIP solution
+
+To run the Mixed Integer Programming (MIP) solution, we first need to install the following libraries in Python (3.6+):
 
 1. geopy
 2. pandas
@@ -14,11 +18,7 @@ To install each of the libary, run the following command on the terminal:
 
 where `libraryName` is the name of the library, like `mip`.
 
-The test data files to be run must be present in this folder.
-
-## Instructions to run MIP solution
-
-To run the solver in its most basic form, run the followig command
+To run the solver in its most basic form, run the following command
 ```
 python3 MIPsolver.py [input_district_file] [input_lab_file] 
 ```
@@ -27,11 +27,9 @@ To vary the time limit of the solver, go to the bottom of the file and change `o
 
 ### Giving custom centroids as input 
 
-
-
 ### Giving pre-formed district-centroid connections to be directly fed to the MIP
 
-#### NOTE: While the currently 
+#### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
 
 ## Instructions to run greedy
 
