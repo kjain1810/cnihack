@@ -4,6 +4,14 @@ The test data files to be run must be present in this folder.
 
 ## Instructions to run MIP solution
 
+To run the solver in its most basic form, 
+```
+python3 MIPsolver.py [input_district_file] [input_lab_file] 
+```
+### Giving custom centroids as input 
+
+### Giving pre-formed district-centroid connections as input 
+
 ## Instructions to run greedy
 
 The following commands must be run to get the greedy solution with `number` between 1-5 to denote which test file/solution.
