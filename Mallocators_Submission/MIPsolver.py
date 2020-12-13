@@ -953,7 +953,7 @@ if argc <= 3:
 	formAllPairs(c)
 else :
 	loadCentroids(sys.argv[3])
-	if argv >= 5:
+	if argc >= 5:
 		loadPairs(sys.argv[4])
 	else :
 		formAllPairs()
