@@ -10,8 +10,8 @@ The varable `num` in line #198 of greedy.cpp must be changed to the required tes
 
 The following commands must be run to get the greedy solution.
 ```
-g++ greedy.cpp
-./a.out > solution_00{num}.csv
+g++ greedy.cpp -o greedy
+./greedy > solution_00{num}.csv
 ```
 
 ## Instructions to run scorer
