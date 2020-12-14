@@ -35,6 +35,15 @@ python3 MIPsolver.py [input_district_file] [input_lab_file] [centroids_file]
 
 Notice that this is an optional argument and may be avoided if the default centroids are sufficient for the purposes.
 
+### Custom centroid input creation
+
+The file Cluster-feeder+Helper.cpp contains certain helper functions we found useful for data exploration as well as our cluster computation and pre-selection procedure (DFS and then select high capacity). It can be modified and ran to explore new datasets as well as compute custom clusters for them. Run the file using the following commands:
+```
+g++ Cluster-feeder+Helper.cpp -o helper
+./helper [district input CSV path] [lab input CSV path] [cluster output file path]
+```
+Presently, it outputs the tight lower bound, number of computed cliques and number of pre-selected cliques on stdout, while sending the list of selected clusters to the passed cluster output file path.
+
 ### Giving pre-formed district-centroid connections to be directly fed to the MIP
 
 By default, for a given centroids list, all the districts are connected to all the centroids. However, there may be redundancy in such a vast model and one may want to prepare special connections to cater these concerns. If you have a list of district centroid connections (for example, see `connections.txt` which specifies the format and has pairing of district with centroids based on `Centroidsv0.txt`), then you can pass that as an argument too to directly load the connections instead of forming them. These district-centroid connections loaded will be directly fed to MIP as input. 
