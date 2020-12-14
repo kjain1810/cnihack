@@ -1,6 +1,6 @@
 # Instructions to run the code
 
-All of the test data files (district and lab data) need to be be present in this folder. The outpus produced by MIP (using PythonMIP library's CBC solver) is present in the 'MIP 10mins Output' folder.
+All of the test data files (district and lab data) need to be be present in this folder. The outpus produced by MIP (using PythonMIP library's CBC solver) is present in the 'MIP 10mins Output' folder. Note that, throughout we have assumed that number of labs is fixed (86) and the number of districts remain static (30). 
 
 ## Instructions to run MIP solution
 
@@ -47,7 +47,16 @@ python3 MIPsolver.py [input_district_file] [input_lab_file] [centroids_file] [di
 
 Notice that this is also an optional argument. Also note that the `centroids_file` should have all the clusters upon which `district_centroid_connection_file` should be based. 
 
-##### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
+If you don't have pre-computed connections but have a list of centroids, one way to generate them via our apporach (random sampling and greedy selection) is to run the following commands:
+
+```
+> g++ makeCentroidPairs.cpp -o pairs
+> ./pairs [input_centroids_list]
+```
+
+This shall produce a file `connections.txt` which has district-centroid connections based upon the centroids list provided.
+
+#### NOTE: While PythonMIP (`mip`) is an open-source and good library to approach optimization problems, it is recommened to use Gurobi if you have a valid installation and a license as Gurobi is much faster than other most other solvers.  
 
 ## Instructions to run greedy
 
