@@ -291,7 +291,7 @@ void print_clusters(vector<vector<int>> &selected, ofstream &fout, string file_n
 signed main(int argc, char *argv[]){
     if(argc!=4){
         cerr << "Invalid number of arguments, 2 required!" << endl;
-        cerr << "Usage: <exeuctable name> <district input CSV path> <lab input CSV path> <cluster output CSV path>" << endl;
+        cerr << "Usage: ./helper [district input CSV path] [lab input CSV path] [cluster output file path]" << endl;
         return 0;
     }
     ifstream distin, labin;
