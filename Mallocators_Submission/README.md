@@ -1,6 +1,6 @@
 # Instructions to run the code
 
-All of the test data files (district and lab data) need to be be present in this folder.
+All of the test data files (district and lab data) need to be be present in this folder. The outpus produced by MIP (using PythonMIP library's CBC solver) is present in the 'MIP 10mins Output' folder.
 
 ## Instructions to run MIP solution
 
