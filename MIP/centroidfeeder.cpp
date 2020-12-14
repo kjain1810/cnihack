@@ -122,6 +122,7 @@ struct sortbycap{
     }
 };
 
+//DFS for computing components in G_c
 void DFS(int u, vector<bool> &vis, vector<int> &component){
     vis[u] = true;
     component.push_back(u);
@@ -132,6 +133,7 @@ void DFS(int u, vector<bool> &vis, vector<int> &component){
     }
 }
 
+//Get components of G_c (labs as nodes, under 40km have edge)
 void get_components(vector<vector<int>> &components, vector<int> &comp_of){
     vector<bool> vis(num_labs+1, 0);
     for(int i = 1; i <= num_labs; i++){
@@ -147,7 +149,7 @@ void get_components(vector<vector<int>> &components, vector<int> &comp_of){
 }
 
 //Backtracking search to compute cliques
-void get_cliques(vector<vector<int>> &cliques, int szleft, vector<int> curr_nodes, int last, vector<int> &nodeslist){
+void add_cliques(vector<vector<int>> &cliques, int szleft, vector<int> curr_nodes, int last, vector<int> &nodeslist){
     if(szleft==0){
         cliques.push_back(curr_nodes);
         return;
@@ -166,7 +168,7 @@ void get_cliques(vector<vector<int>> &cliques, int szleft, vector<int> curr_node
         if(flag!=0){   
             //subset=1; //Uncomment to prune subsets
             curr_nodes.push_back(flag);
-            get_cliques(cliques, szleft-1, curr_nodes, i, nodeslist);
+            add_cliques(cliques, szleft-1, curr_nodes, i, nodeslist);
             curr_nodes.pop_back();
         }
     }
@@ -329,8 +331,9 @@ signed main(int argc, char *argv[]){
         if(labz[i].district == 5) bangalore.push_back(i);
     }
 
-    get_cliques(cliques, 6, curr_nodes, 0, bangalore); //get for overall size 5
-    get_cliques(cliques, 6, curr_nodes, -1, total); //get for bangalore size 8
+    for(auto v: components){
+        add_cliques(cliques, 6, curr_nodes, -1, v);
+    }
     int num_cliques = cliques.size();
     //print_freq(cliques, 7);
     cout << "Number of cliques computed: " << num_cliques << endl;
