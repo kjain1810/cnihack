@@ -555,8 +555,8 @@ class Solver:
 		For example:
 		
 			Input File Name(s)	| 	Output file name 
-		district_test_data_001 -> test_data_001_solution
-		lab_sample_data_003    -> test_data_003_solution
+		district_test_data_001.csv -> test_data_001_solution
+		lab_sample_data_003.csv    -> test_data_003_solution
 
 		Arguments:
 		-detailed (optional): Whether the string detialed needs
@@ -568,12 +568,14 @@ class Solver:
 		try:
 			args = sys.argv[1].split('_')
 			last = args[-1].split('.')
-			finalNameList = args[1:-1]
-			finalNameList.append(last[0])
+# 			finalNameList = args[1:-1]
+# 			finalNameList.append(last[0])
+			finalNameList = []
 			if detailed:
 				finalNameList.append("detailed")
 			finalNameList.append("solution")
-			finalNameList.append(str(self.timeLimit) + "s")
+			finalNameList.append(last[0])
+			#finalNameList.append(str(self.timeLimit) + "s")
 			fileName = '_'.join(finalNameList)
 		except:
 			fileName = "solution"
